@@ -9,7 +9,7 @@ public class Ppal {
 		int num1, num2, op;
 		double result;
 		String aux;
-		Scanner sc= new Scanner (System.in);
+		Scanner sc= new Scanner (System.in);	
 		
 		System.out.println("Primer número");
 		aux=sc.nextLine();
@@ -21,8 +21,14 @@ public class Ppal {
 		aux=sc.nextLine();
 		op=Integer.parseInt(aux);
 		do {
+			System.out.println("Opcion:");
+			System.out.println("1.- sumar");
+			aux=sc.nextLine();
+			op=Integer.parseInt(aux);
 			switch(op) {
 			case 1:
+				result=num1+num2;
+				System.out.println("La suma entre los dos números es: "+result);
 				break;
 			case 2:
 				break;
